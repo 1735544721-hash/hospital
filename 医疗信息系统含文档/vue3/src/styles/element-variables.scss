@@ -1,0 +1,80 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #1976D2, // 医疗蓝,代表专业和信任
+    ),
+    'success': (
+      'base': #4CAF50, // 医疗绿,代表健康和生命
+    ),
+    'warning': (
+      'base': #FF9800, // 温和的橙色,用于提醒
+    ),
+    'danger': (
+      'base': #E53935, // 医疗红,代表紧急和警示
+    ),
+    'info': (
+      'base': #607D8B, // 沉稳的蓝灰色,用于普通信息
+    )
+  ),
+);
+
+/* 只需要重写你需要的即可 */
+@use "element-plus/theme-chalk/src/index.scss" as *;
+
+// Element Plus 自定义样式
+// 卡片样式
+.el-card {
+  border: none !important;
+  box-shadow: none !important;
+
+  &:hover {
+    box-shadow: none !important;
+  }
+}
+
+// 选择器样式
+.el-select {
+  width: 150px !important;
+}
+
+// Switch 样式
+.el-switch__core .el-switch__action {
+  border-radius: 50% !important;
+}
+
+// Radio 样式
+.el-radio__inner {
+  border-radius: 50% !important;
+  &::after {
+    border-radius: 50% !important;
+  }
+}
+
+// Dialog 样式
+.el-dialog {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  
+  .el-dialog__header {
+    margin: 0;
+    padding: 20px 24px;
+    border-bottom: 1px solid #ebeef5;
+    
+    .el-dialog__title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  
+  .el-dialog__body {
+    padding: 24px;
+  }
+  
+  .el-dialog__footer {
+    padding: 16px 24px;
+    border-top: 1px solid #ebeef5;
+  }
+}
+
+
+
+
