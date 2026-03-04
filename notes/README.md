@@ -9,6 +9,10 @@
 - medicine：`数据库表字段-medicine.md`
 - medicine_category：`数据库表字段-medicine_category.md`
 - patient：`数据库表字段-patient.md`
+- prescription：`数据库表字段-prescription.md`
+- prescription_detail：`数据库表字段-prescription_detail.md`
+- schedule：`数据库表字段-schedule.md`
+- user：`数据库表字段-user.md`
 
 ## 其他
 - 摘要样例对照：`样例对照-摘要.md`
